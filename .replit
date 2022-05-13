@@ -1,2 +1,2 @@
 language = "bash"
-run = ""
+run = "cdActivitySet#1/py03.py"
