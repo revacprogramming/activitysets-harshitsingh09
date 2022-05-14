@@ -1,18 +1,19 @@
 # Loops & Iterators
 
-# Write code using find() and string slicing (see section 6.10) to extract the number at the end of the line below. Convert the extracted value to a floating point number and print it out.
+# Video Problem
 
-largest = None
-smallest = None
-
+num = 0
+total = 0
 while True:
-    num = input("Enter a number? ")
+  sval = input("Enter a Value: ")
+  if sval == 'Done':
+    break
+  try:
+    fval = float(sval)
+  except:
+    print('Invalid input')
+    continue
+  num = num + 1
+  total = total + fval
 
-    if num == "done":
-        break
-
-    # ...
-
-    print(num)
-
-print("Maximum", largest)
+print(total, num, total/num)
