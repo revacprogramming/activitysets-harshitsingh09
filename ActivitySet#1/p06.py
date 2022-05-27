@@ -4,8 +4,8 @@
 
 text = "X-DSPAM-Confidence:    0.8475"
 pos = text.find(':')
-print(pos)
+#print(pos)
 chunk = text[pos+1:]
-print(chunk)
+#print(chunk)
 value = float(chunk)
 print(value)
