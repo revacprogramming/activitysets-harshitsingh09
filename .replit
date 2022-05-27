@@ -1,2 +1,2 @@
 language = "bash"
-run = "python ActivitySet#1/p06.py"
+run = "python ActivitySet#1/p07.2.py"

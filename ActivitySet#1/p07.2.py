@@ -7,11 +7,16 @@
 
 # Use the file name mbox-short.txt as the file name
 
-fname = input("Enter file name: ")
-
-fh = open(fname)
-for line in fh:
-    if not line.startswith("X-DSPAM-Confidence:"):
-        continue
-    print(line)
-print("Done")
+filename=input("Enter a filename :")
+fhandle=open(filename)
+count=0
+total=0
+for line in fhandle:
+  if line.startswith("X-DSPAM-Confidence:"):
+     s=line.split()
+     v=float(s[1])
+     count+=1
+     total+=v
+#print("count",count,"Total",total)
+average=total/count
+print("Average spam confidence:",average)
