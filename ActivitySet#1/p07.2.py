@@ -18,6 +18,5 @@ for line in fhandle:
      v=float(s[1])
      count+=1
      total+=v
-#print("count",count,"Total",total)
 average=total/count
 print("Average spam confidence:",average)
