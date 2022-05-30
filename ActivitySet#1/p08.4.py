@@ -5,8 +5,15 @@ Open the file romeo.txt and read it line by line. For each line, split the line 
 You can download the sample data at http://www.py4e.com/code3/romeo.txt
 '''
 
-fname = input("Enter file name: ")
-fh = open(fname)
+filename = "dataset/romeo.txt"
+fopen = open(filename)
 lst = list()
-for line in fh:
-print(line.rstrip())
+for line in fopen:
+   spt_line = line.split()
+   for word in spt_line:
+     if word not in lst:
+       lst.append(word)
+       lst.sort()
+     else:
+       continue
+print(lst)
