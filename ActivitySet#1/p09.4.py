@@ -16,5 +16,3 @@ for line in fhandle:
     sp=spt[1]
     d[sp]=d.get(sp,0)+1
 print(sp,d[sp])
-
-# waiting
