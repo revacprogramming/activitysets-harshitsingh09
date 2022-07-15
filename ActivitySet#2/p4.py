@@ -1,16 +1,16 @@
-
+# Break a string into a list and then join the list into a string again
 
 def get_cs():
-    """get string input"""
-
+    x = str(input("Enter a string:\n"))
+    return x
 
 def cs_to_lot(cs):
-    """convert connected string to list of strings"""
-
+    x = list(cs)
+    return x
 
 def lot_to_cs(lot):
-    """convert list of strings to connected string"""
-
+    x = "".join(lot)
+    return x
 
 def main():
     cs=get_cs()
