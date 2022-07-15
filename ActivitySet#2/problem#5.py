@@ -1,16 +1,16 @@
-
+# Convert a string to dictionary 
 
 def get_cs():
-    """get string input"""
-
+    x = str(input("Enter a string:\n"))
+    return x
 
 def cs_to_dict(cs):
-    """convert connect string to a dictionary"""
-
+    x = dict(cs)
+    return x
 
 def dict_to_cs(d):
-    """convert a dictionary to connect string"""
-
+    x = "".join(d)
+    return x
 
 def main():
     cs = get_cs()
