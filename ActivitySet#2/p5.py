@@ -5,16 +5,17 @@ def get_cs():
     return x
 
 def cs_to_dict(cs):
-    x = dict(cs)
-    return x
+    x = cs.split()
+    #print(x)
+    x.remove('=')
+    print(x)
 
 def dict_to_cs(d):
-    x = "".join(d)
-    return x
-
+    pass
+    
 def main():
     cs = get_cs()
-
+    d = dict()
     d = cs_to_dict(cs) # convert connect string to a dictionary
     print(d)    
 
